@@ -24,7 +24,7 @@ namespace MavieAADB2CBackend
             string password = split[1];
 
             //Check Credentials
-            if (username != Environment.GetEnvironmentVariable("BASIC_AUTH_USERNAME") || password != Environment.GetEnvironmentVariable("BASIC_AUTH_PASSWORD"))
+            if (username != Environment.GetEnvironmentVariable("BASIC_AUTH_USERNAME").ToString() || password != Environment.GetEnvironmentVariable("BASIC_AUTH_PASSWORD").ToString())
                 return false;
 
             return true;

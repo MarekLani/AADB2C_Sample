@@ -13,7 +13,7 @@ namespace MavieAADB2CBackend
 {
     public static class ChangeAccountEnabled
     {
-        [Function("DeactivateUser")]
+        [Function("ChangeAccountEnabled")]
         public static async Task<HttpResponseData> Run(
             [HttpTrigger(AuthorizationLevel.Function, "put", Route = null)] HttpRequestData req,
             ILogger log)
