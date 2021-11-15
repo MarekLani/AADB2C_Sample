@@ -184,7 +184,7 @@
 
 		$('#confirmInvitationCode').click(() => 
 		{
-			$.ajax( "https://mavieaadb2cbackend.azurewebsites.net/api/ValidateInvitationCode", {
+			$.ajax( "https://<your-backend-endpoint>/api/ValidateInvitationCode", {
 				type: "POST",
 				data: JSON.stringify({invitationCode: $('#extension_InvitationCode').val()}),
 				contentType: "application/json",

@@ -56,6 +56,7 @@ namespace MavieAADB2CBackend
 
             //SET Organization
             string organizationAtribute = $"extension_{Environment.GetEnvironmentVariable("B2C_EXTENSIONS_APP_ID") }_Organization";
+            //Obtain the org name based on the Invitation Code 
             underlyingResponseObject.Add(organizationAtribute, "SomeOrg");
 
             //Construct Display Name

@@ -3,14 +3,14 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
-    "BASIC_AUTH_USERNAME": "user",
-    "BASIC_AUTH_PASSWORD": "password",
-    "B2C_EXTENSIONS_APP_ID": "e0bd5a39d3fb4079b0c34b841e50b14f",
-    "AAD_CLIENT_ID": "1cfdc7ac-fead-4df5-9b9d-cf78110dccef",
-    "AAD_CLIENT_SECRET": "yhS7Q~7n5z4zHtDS61hkahxjjm8BcdcezLQI_",
-    "AAD_TENANT_ID": "06544773-5e9f-4ff7-9f7a-7e763eea1a42"
+    "BASIC_AUTH_USERNAME": "",
+    "BASIC_AUTH_PASSWORD": "",
+    "B2C_EXTENSIONS_APP_ID": "",
+    "AAD_CLIENT_ID": "",
+    "AAD_CLIENT_SECRET": "",
+    "AAD_TENANT_ID": ""
   },
   "Host": {
-    "CORS": "https://maviepoc.b2clogin.com"
+    "CORS": "https://<tenant-name>.b2clogin.com"
   }
 }

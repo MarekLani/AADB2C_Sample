@@ -27,11 +27,11 @@ namespace MavieAADB2CBackend
             GraphServiceClient graphServiceClient = new GraphServiceClient(clientSecretCredential, scopes);
          
 
-            string companyAtribute = $"extension_{Environment.GetEnvironmentVariable("B2C_EXTENSIONS_APP_ID") }_Company";
+            string organizationAtribute = $"extension_{Environment.GetEnvironmentVariable("B2C_EXTENSIONS_APP_ID") }_Organization";
 
             var users = await graphServiceClient.Users
                 .Request()
-                .Select($"surname,givenName,createdDateTime,{companyAtribute}")
+                .Select($"surname,givenName,createdDateTime,{organizationAtribute}")
                 .GetAsync();
             //Custom attribute stored under user.AdditionalData property
 
